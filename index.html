@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Recipe Finder SPA</title>
 <style>
-  
+
   body {
     font-family: Arial, sans-serif;
     background: #ff5722;
@@ -142,6 +142,11 @@ body.dark .card {
 <body>
 
 <header>
+  <select id="searchType">
+  <option value="name">Search by Name</option>
+  <option value="ingredient">Search by Ingredient</option>
+</select>
+
   <input type="text" id="searchInput" placeholder="Search for recipes..." />
   <button id="searchBtn">Search</button>
 </header>
